@@ -7,6 +7,7 @@ import { createContext, useMemo } from "react";
 import Head from "next/head";
 import { getPageTitle } from "notion-utils";
 import config from "config/config.json";
+import OpenGraphHead from "components/OpenGraphHead";
 
 interface Props {
   pageID: string;
@@ -42,13 +43,7 @@ export default function Page(props: Props) {
 
   return (
     <PageContext.Provider value={{ ...props, currentSection }}>
-      <Head>
-        <title>
-          {pageTitle
-            ? `${pageTitle} - 한 입 크기로 잘라먹는 리액트`
-            : "한 입 크기로 잘라먹는 리액트"}
-        </title>
-      </Head>
+      <OpenGraphHead title={pageTitle} />
       <Layout />
     </PageContext.Provider>
   );
@@ -57,7 +52,7 @@ export default function Page(props: Props) {
 export const getStaticPaths = () => {
   return {
     paths: [],
-    fallback: true,
+    fallback: "blocking",
   };
 };
 

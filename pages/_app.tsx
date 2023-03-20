@@ -25,9 +25,7 @@ export default function MyApp(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>한 입 크기로 잘라먹는 리액트</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <meta property={"og:image"} content={thumbnail.src}></meta>
       </Head>
       <CssBaseline />
       <Component {...pageProps} />
