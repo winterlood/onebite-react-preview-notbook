@@ -1,0 +1,63 @@
+/* 
+    모든 변수는 노션 렌더러가 사용합니다.
+    따라서 사용하지 않을 변수라도 제거하지는 마세요
+*/
+
+:root {
+  --font-h1: 2rem;
+  --font-h2: 1.5rem;
+  --font-h3: 1.25rem;
+  --font-large: 1.1rem;
+  --font: 1rem;
+  --font-small: 14px;
+
+  --primary-color: rgb(8, 126, 164);
+  --primary-tinted-color: rgb(230, 247, 255);
+
+  --fg-color: rgb(35, 39, 47);
+  --fg-opacity-color: rgb(74, 81, 96);
+
+  --fg-color-0: rgba(55, 53, 47, 0.09);
+  --fg-color-1: rgba(55, 53, 47, 0.16);
+  --fg-color-2: rgba(55, 53, 47, 0.4);
+  --fg-color-3: rgba(55, 53, 47, 0.6);
+  --fg-color-4: #000;
+  --fg-color-5: rgba(55, 53, 47, 0.024);
+  --fg-color-6: rgba(55, 53, 47, 0.8);
+  --fg-color-icon: var(--fg-color);
+
+  --bg-color: #fff;
+  --bg-opacity-color: rgb(246, 247, 249);
+
+  --bg-color-0: rgba(135, 131, 120, 0.15);
+  --bg-color-1: rgb(247, 246, 243);
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+
+  --select-color-0: rgb(46, 170, 220);
+  --select-color-1: rgba(45, 170, 219, 0.3);
+  --select-color-2: #d9eff8;
+}
+
+[data-theme="dark"] {
+  --primary-color: rgb(20, 158, 202);
+  --primary-tinted-color: rgba(88, 175, 223, 0.1);
+
+  --fg-color: rgb(229, 231, 235);
+  --fg-opacity-color: rgb(153, 161, 179);
+
+  --fg-color-0: var(--fg-color);
+  --fg-color-1: var(--fg-color);
+  --fg-color-2: var(--fg-color);
+  --fg-color-3: var(--fg-color);
+  --fg-color-4: var(--fg-color);
+  --fg-color-5: rgba(255, 255, 255, 0.7);
+  --fg-color-6: #fff;
+  --fg-color-icon: rgb(153, 161, 179);
+
+  --bg-color: rgb(35, 39, 47);
+  --bg-opacity-color: rgb(52, 58, 70);
+
+  --bg-color-0: rgba(120, 131, 155, 0.2);
+  --bg-color-1: rgb(63, 68, 71);
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+}

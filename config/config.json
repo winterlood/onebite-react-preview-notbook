@@ -1,0 +1,24 @@
+{
+  "home_page_id": "f1e267dab37d44ab8da92c188e38fda1",
+  "menus": [
+    {
+      "type": "INNER",
+      "title": "📹 온라인 강의",
+      "id": "2c1fc37a61a6486fb6f8ec72978a76dc"
+    },
+    {
+      "type": "INNER",
+      "title": "📚 책으로 보기",
+      "id": "5ce0c0c2a7864c71992576e53182cc1f"
+    },
+    {
+      "type": "EXTERNAL",
+      "title": "🌏 저자 블로그",
+      "url": "https://winterlood.com"
+    }
+  ],
+  "profile": {
+    "name": "이정환",
+    "nickname": "winterlood"
+  }
+}
