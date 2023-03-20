@@ -9,8 +9,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import createEmotionCache from "lib/createEmotionCache";
 import useNProgressEffect from "hooks/useNProgressEffect";
-import thumbnail from "public/thumbnail.png";
 import { Analytics } from "@vercel/analytics/react";
+import usePageviewEffect from "hooks/usePageViewEffect";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -20,6 +20,7 @@ export interface MyAppProps extends AppProps {
 
 export default function MyApp(props: MyAppProps) {
   useNProgressEffect();
+  usePageviewEffect();
 
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
   return (
