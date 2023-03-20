@@ -8,7 +8,6 @@ export const HeaderWrapper = styled("div")`
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  align-items: center;
 `;
 
 export const Logo = styled("div")`

@@ -54,8 +54,8 @@ export default function Header() {
           <Image alt="reacticon" src={`/react.svg`} width={22} height={22} />한
           입 크기로 잘라먹는 리액트
         </Logo>
-        <SearchBar onClick={() => setIsSearch(!isSearch)} />
         <ThemeButton />
+        <SearchBar onClick={() => setIsSearch(!isSearch)} />
       </HeaderWrapper>
       <SearchModal
         key={`search-modal-${modalKey.current}`}
