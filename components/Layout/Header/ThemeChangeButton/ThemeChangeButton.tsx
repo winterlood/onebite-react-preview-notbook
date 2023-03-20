@@ -1,16 +1,25 @@
-import { ThemeButtonWrapper } from "./ThemeButton.style";
+import { ThemeButtonWrapper } from "./ThemeChangeButton.style";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useState, useEffect } from "react";
 
-export default function ThemeButton() {
+export default function ThemeChangeButton() {
   const [theme, setTheme] = useState<"light" | "dark" | null>(null);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme as "dark" | "light");
+      return;
     }
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setTheme("dark");
+      return;
+    }
+    setTheme("light");
   }, []);
 
   useEffect(() => {

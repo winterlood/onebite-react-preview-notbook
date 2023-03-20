@@ -3,10 +3,10 @@ import SearchBar from "./Searchbar";
 import { useRef, useState, useEffect } from "react";
 import SearchModal from "./SearchModal";
 import { useRouter } from "next/router";
-import ThemeButton from "./ThemeButton";
 import MenuButton from "./MenuButton";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
+import ThemeChangeButton from "./ThemeChangeButton";
 
 export default function Header() {
   const router = useRouter();
@@ -54,8 +54,8 @@ export default function Header() {
           <Image alt="reacticon" src={`/react.svg`} width={22} height={22} />한
           입 크기로 잘라먹는 리액트
         </Logo>
-        <ThemeButton />
         <SearchBar onClick={() => setIsSearch(!isSearch)} />
+        <ThemeChangeButton />
       </HeaderWrapper>
       <SearchModal
         key={`search-modal-${modalKey.current}`}
