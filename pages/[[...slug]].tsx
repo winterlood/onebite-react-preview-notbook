@@ -10,6 +10,7 @@ import config from "config/config.json";
 
 interface Props {
   pageID: string;
+  pageTitle?: string;
   sections: Section[];
   recordMap: ExtendedRecordMap;
 }
@@ -21,7 +22,7 @@ interface PageContextData extends Props {
 export const PageContext = createContext<PageContextData>(null as any);
 
 export default function Page(props: Props) {
-  const { pageID, sections, recordMap } = props;
+  const { pageID, sections, pageTitle } = props;
 
   const currentSection = useMemo(() => {
     if (!sections) return undefined;
@@ -39,15 +40,14 @@ export default function Page(props: Props) {
     });
   }
 
-  let pageTitle = "";
-  if (recordMap) {
-    pageTitle = getPageTitle(recordMap);
-  }
-
   return (
     <PageContext.Provider value={{ ...props, currentSection }}>
       <Head>
-        <title>{pageTitle} | 한 입 크기로 잘라먹는 리액트</title>
+        <title>
+          {pageTitle
+            ? `${pageTitle} - 한 입 크기로 잘라먹는 리액트`
+            : "한 입 크기로 잘라먹는 리액트"}
+        </title>
       </Head>
       <Layout />
     </PageContext.Provider>
@@ -83,6 +83,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   return {
     props: {
       pageID: pageID || "index",
+      pageTitle: recordMap ? getPageTitle(recordMap) : null,
       sections: sections,
       recordMap: recordMap,
     },
