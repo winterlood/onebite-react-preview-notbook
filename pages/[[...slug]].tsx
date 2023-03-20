@@ -47,7 +47,7 @@ export default function Page(props: Props) {
   return (
     <PageContext.Provider value={{ ...props, currentSection }}>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{pageTitle} | 한 입 크기로 잘라먹는 리액트</title>
       </Head>
       <Layout />
     </PageContext.Provider>

@@ -1,5 +1,4 @@
 import { ThemeButtonWrapper } from "./ThemeButton.style";
-
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useState, useEffect } from "react";
