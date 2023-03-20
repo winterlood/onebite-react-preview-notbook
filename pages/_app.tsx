@@ -10,6 +10,7 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import createEmotionCache from "lib/createEmotionCache";
 import useNProgressEffect from "hooks/useNProgressEffect";
 import thumbnail from "public/thumbnail.png";
+import { Analytics } from "@vercel/analytics/react";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -30,6 +31,7 @@ export default function MyApp(props: MyAppProps) {
       </Head>
       <CssBaseline />
       <Component {...pageProps} />
+      <Analytics />
     </CacheProvider>
   );
 }
