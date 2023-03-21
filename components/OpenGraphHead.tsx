@@ -13,9 +13,7 @@ interface Props {
 const OpenGraphHead = (props: Props) => {
   const image = props.thumbnail || process.env.BASE_URL + thumbnail.src;
   const description = props.description || config.description;
-  const title = props.title
-    ? `${props.title} - ${config.site}`
-    : `${config.site}`;
+  const title = props.title ? `${props.title}` : `${config.site}`;
 
   const openGraphObj: {
     og: { [k: string]: string };
