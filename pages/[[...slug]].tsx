@@ -100,6 +100,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       sections: sections,
       recordMap: recordMap,
     },
-    revalidate: 30,
+    revalidate: 0,
   };
 };
