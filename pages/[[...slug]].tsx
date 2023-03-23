@@ -8,6 +8,7 @@ import Head from "next/head";
 import { getPageTitle } from "notion-utils";
 import config from "config/config.json";
 import OpenGraphHead from "components/OpenGraphHead";
+import { fetchAllPages } from "../lib/notion";
 
 interface Props {
   pageID: string;
@@ -41,7 +42,27 @@ export default function Page(props: Props) {
   );
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths = async () => {
+  const renderMode = config.renderMode as "SSG" | "ISR" | "ISR_WITH_SSG";
+  if (renderMode === "SSG" || renderMode === "ISR_WITH_SSG") {
+    try {
+      const pages = await fetchAllPages();
+      console.log(`pre-render page count : ${pages.length}`);
+      return {
+        fallback: renderMode === "SSG" ? false : "blocking",
+        paths: pages.map((page) => ({ params: { slug: [page.id] } })),
+      };
+    } catch (err) {
+      // when fetchPage is failed running like ISR
+      console.log(`fetchPage failed: ${err}`);
+      console.log(`run like ISR`);
+      return {
+        fallback: "blocking",
+        paths: [],
+      };
+    }
+  }
+  // default rendermode is ISR
   return {
     paths: [],
     fallback: "blocking",
@@ -57,7 +78,7 @@ function isRejected<T>(
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as { slug?: string[] };
 
-  const pageID = Array.isArray(slug) ? slug[0] : config.home_page_id;
+  const pageID = Array.isArray(slug) ? slug[0] : config.homePageID;
   const isContentPage = Array.isArray(slug) && slug.length === 1;
 
   const [sectionsReq, recordMapReq] = await Promise.allSettled([

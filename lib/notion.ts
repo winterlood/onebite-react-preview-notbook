@@ -67,8 +67,7 @@ export const fetchAllPages = async () => {
     });
     return contents;
   } catch (e) {
-    console.log(e);
-    return null;
+    throw new Error("");
   }
 };
 
