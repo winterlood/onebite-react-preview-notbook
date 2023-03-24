@@ -31,7 +31,7 @@ export const StyledA = styled("a")`
 export const StyledAlert = styled(Alert)`
   background-color: var(--primary-tinted-color);
   color: var(--fg-color);
-  font-size: var(--font-large);
+  font-size: var(--font-small);
   font-family: medium;
   svg {
     color: var(--primary-color);
