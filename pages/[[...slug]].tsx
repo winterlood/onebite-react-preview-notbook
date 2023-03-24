@@ -3,11 +3,13 @@ import { GetStaticProps } from "next";
 import { Section } from "types/content";
 import { ExtendedRecordMap } from "notion-types";
 import Layout from "../components/Layout/index";
-import { createContext,  } from "react";
+import { createContext, useEffect } from "react";
 import { getPageTitle } from "notion-utils";
 import config from "config/config.json";
 import OpenGraphHead from "components/OpenGraphHead";
 import { fetchAllPages } from "../lib/notion";
+import { pageViewGA } from "../hooks/usePageViewEffect";
+import { useRouter } from "next/router";
 
 interface Props {
   pageID: string;
@@ -24,6 +26,7 @@ interface PageContextData extends Props {
 export const PageContext = createContext<PageContextData>(null as any);
 
 export default function Page(props: Props) {
+  const router = useRouter();
   const { pageID, sections, pageTitle, currentSection } = props;
 
   if (sections) {
@@ -32,6 +35,14 @@ export default function Page(props: Props) {
       section.chapters.sort((a, b) => a.index - b.index);
     });
   }
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === "development") return;
+    pageViewGA({
+      pagePath: `/${pageID}`,
+      pageTitle: pageTitle,
+    });
+  }, [router.asPath]);
 
   return (
     <PageContext.Provider value={{ ...props, currentSection }}>
