@@ -8,10 +8,13 @@ import { Section } from "types/content";
 import dynamic from "next/dynamic";
 import { CodeBlock } from "../../../types/notion";
 import { useRouter } from "next/router";
-import { CircularProgress } from "@mui/material";
+import { Alert, CircularProgress } from "@mui/material";
 import NearPageButton from "./NearPageButton/index";
 import EmptyArticle from "./EmptyArticle";
 import { PageContext } from "../../../pages/[[...slug]]";
+import { getPageTitle } from "notion-utils";
+import PageTitle from "./PageTitle";
+import PageAside from "./PageAside";
 
 const Code = dynamic(() => import("./Code"), {
   loading: () => <>코드를 불러오는 중 입니다 ...</>,
@@ -59,6 +62,8 @@ export default function Article() {
     <ArticleWrapper>
       {recordMap ? (
         <StyledNotionRenderer
+          pageTitle={<PageTitle recordMap={recordMap} />}
+          pageAside={<PageAside />}
           darkMode={true}
           disableHeader={true}
           fullPage={true}
