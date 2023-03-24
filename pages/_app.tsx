@@ -10,7 +10,6 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import createEmotionCache from "lib/createEmotionCache";
 import useNProgressEffect from "hooks/useNProgressEffect";
 import { Analytics } from "@vercel/analytics/react";
-import usePageviewEffect from "hooks/usePageViewEffect";
 import Script from "next/script";
 
 const clientSideEmotionCache = createEmotionCache();
