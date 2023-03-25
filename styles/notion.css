@@ -3,6 +3,23 @@
     "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
     "Segoe UI Emoji", "Segoe UI Symbol";
 
+  --bg-color-0: rgba(135, 131, 120, 0.15);
+  --bg-color-1: rgb(247, 246, 243);
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+
+  --select-color-0: rgb(46, 170, 220);
+  --select-color-1: rgba(45, 170, 219, 0.3);
+  --select-color-2: #d9eff8;
+
+  --fg-color-0: rgba(55, 53, 47, 0.09);
+  --fg-color-1: rgba(55, 53, 47, 0.16);
+  --fg-color-2: rgba(55, 53, 47, 0.4);
+  --fg-color-3: rgba(55, 53, 47, 0.6);
+  --fg-color-4: #000;
+  --fg-color-5: rgba(55, 53, 47, 0.024);
+  --fg-color-6: rgba(55, 53, 47, 0.8);
+  --fg-color-icon: var(--fg-color);
+
   --notion-red: rgb(224, 62, 62);
   --notion-pink: rgb(173, 26, 114);
   --notion-blue: rgb(11, 110, 153);
@@ -49,6 +66,19 @@
 }
 /* notion pallette [darkmode] */
 [data-theme="dark"] {
+  --bg-color-0: rgba(120, 131, 155, 0.2);
+  --bg-color-1: rgb(63, 68, 71);
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+
+  --fg-color-0: var(--fg-color);
+  --fg-color-1: var(--fg-color);
+  --fg-color-2: var(--fg-color);
+  --fg-color-3: var(--fg-color);
+  --fg-color-4: var(--fg-color);
+  --fg-color-5: rgba(255, 255, 255, 0.7);
+  --fg-color-6: #fff;
+  --fg-color-icon: rgb(153, 161, 179);
+
   --notion-red: rgb(255, 115, 105);
   --notion-pink: rgb(226, 85, 161);
   --notion-blue: rgb(82, 156, 202);

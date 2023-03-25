@@ -7,6 +7,7 @@ import MenuButton from "./MenuButton";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
 import ThemeChangeButton from "./ThemeChangeButton";
+import config from "config/config.json";
 
 export default function Header() {
   const router = useRouter();
@@ -51,8 +52,8 @@ export default function Header() {
       <HeaderWrapper>
         <MenuButton toggleMenu={toggleMenu} />
         <Logo onClick={onClickLogo}>
-          <Image alt="reacticon" src={`/react.svg`} width={22} height={22} />한
-          입 크기로 잘라먹는 리액트
+          <Image alt="logosvg" src={`/logo.svg`} width={22} height={22} />
+          {config.site}
         </Logo>
         <SearchBar onClick={() => setIsSearch(!isSearch)} />
         <ThemeChangeButton />

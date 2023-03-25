@@ -44,7 +44,7 @@ export default function Sidebar() {
         <MenuItem
           key={`menu-item-index}`}
           type={"INNER"}
-          title={"🙋‍♂️ 소개"}
+          title={"🏠 홈"}
           id={""}
         />
         {appMenus.map((menu) => (
