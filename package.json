@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
     "@mui/styles": "^5.11.13",
+    "@next/bundle-analyzer": "^13.2.4",
     "@notionhq/client": "^2.2.3",
     "@svgr/webpack": "^6.5.1",
     "@types/gtag.js": "^0.0.12",

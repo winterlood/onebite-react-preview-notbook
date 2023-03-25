@@ -1,3 +1,7 @@
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
@@ -8,7 +12,7 @@ const nextConfig = {
     NOTION_DATABSE_ID: process.env.NOTION_DATABSE_ID,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
-  webpack(config) {
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
@@ -17,4 +21,12 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+// module.exports = withPlugins([], nextConfig);
+
+module.exports = () => {
+  const plugins = [withBundleAnalyzer];
+  const config = plugins.reduce((acc, next) => next(acc), {
+    ...nextConfig,
+  });
+  return config;
+};
