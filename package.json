@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/cache": "latest",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "latest",
     "@emotion/styled": "^11.10.6",

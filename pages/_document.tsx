@@ -7,8 +7,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="width=device-width" />
-          <link rel="shortcut icon" href="/favicon.png" />
           <script
             dangerouslySetInnerHTML={{
               __html: `

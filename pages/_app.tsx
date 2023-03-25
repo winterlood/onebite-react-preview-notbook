@@ -3,25 +3,19 @@ import "styles/pallette.css";
 import "styles/notion.css";
 
 import * as React from "react";
-import Head from "next/head";
 import { AppProps } from "next/app";
 import CssBaseline from "@mui/material/CssBaseline";
-import { CacheProvider, EmotionCache } from "@emotion/react";
-import createEmotionCache from "lib/createEmotionCache";
 import useNProgressEffect from "hooks/useNProgressEffect";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import Head from "next/head";
 
-const clientSideEmotionCache = createEmotionCache();
-
-export interface MyAppProps extends AppProps {
-  emotionCache?: EmotionCache;
-}
+export interface MyAppProps extends AppProps {}
 
 export default function MyApp(props: MyAppProps) {
   useNProgressEffect();
 
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const { Component, pageProps } = props;
   return (
     <>
       <Script id="google-tag-manager" strategy="afterInteractive">
@@ -46,11 +40,13 @@ export default function MyApp(props: MyAppProps) {
           gtag('config', '${process.env.GA_TRACKING_ID}');
         `}
       </Script>
-      <CacheProvider value={emotionCache}>
-        <CssBaseline />
-        <Component {...pageProps} />
-        <Analytics />
-      </CacheProvider>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+      </Head>
+      <CssBaseline />
+      <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }

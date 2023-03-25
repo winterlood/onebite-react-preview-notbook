@@ -25,12 +25,6 @@
       "hooks/*": ["hooks/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "types",
-    "components/Layout/Header/MobileMenu/index.tsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types"],
   "exclude": ["node_modules"]
 }
