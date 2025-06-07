@@ -13,6 +13,7 @@ import MenuItem from "./MenuItem";
 import config from "config/config.json";
 import Profile from "./Profile";
 import { StyledA } from "./Sidebar.style";
+
 const appMenus: Menu[] = config.menus as Menu[];
 
 export default function Sidebar() {

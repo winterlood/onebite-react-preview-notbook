@@ -6,7 +6,7 @@ import { ContentPage } from "types/notion";
 import { ExtendedRecordMap } from "notion-types";
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
-const DATABASE_ID = process.env.NOTION_DATABSE_ID;
+const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
 
 const officalClient = new OfficialClient({
   auth: NOTION_API_KEY,
@@ -60,7 +60,7 @@ const convertContentPage = (pageObject: PageObjectResponse) => {
 export const fetchAllPages = async () => {
   try {
     const queryData = await officalClient.databases.query({
-      database_id: DATABASE_ID as string,
+      database_id: NOTION_DATABASE_ID as string,
     });
     const contents = queryData.results.map((pageObject) => {
       return convertContentPage(pageObject as PageObjectResponse);
@@ -114,7 +114,8 @@ export const getSections = async () => {
 
 export const fetchRecordMap = async (pageID: string) => {
   try {
-    const recordMap: ExtendedRecordMap = await recordMapClient.getPage(pageID);
+    const recordMap: ExtendedRecordMap =
+      await recordMapClient.getPage(pageID);
     return recordMap;
   } catch (e) {
     console.log(e);

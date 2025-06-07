@@ -20,6 +20,20 @@ export const pageViewGA = (configParams: ConfigParams) => {
   }
 };
 
+export const triggerGAEvent = (event: {
+  name: string;
+  category: string;
+  label: string;
+}) => {
+  if (typeof window !== "object") return;
+  if (window.gtag !== undefined) {
+    window.gtag("event", event.name, {
+      event_category: event.category,
+      event_label: event.label,
+    });
+  }
+};
+
 export default function usePageviewEffect() {
   const router = useRouter();
   useEffect(() => {

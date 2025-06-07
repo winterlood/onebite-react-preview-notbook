@@ -16,6 +16,9 @@ export const StyledBanner = styled("div")`
 `;
 
 export const StyledSpan = styled("span")``;
+export const StyledBoldSpan = styled("span")`
+  font-family: bold;
+`;
 
 export const StyledLink = styled(Link)`
   color: var(--primary-color);

@@ -5,6 +5,7 @@ import {
   StyledA,
   StyledSpan,
   StyledAlert,
+  StyledBoldSpan,
 } from "./PageTitle.style";
 import { ExtendedRecordMap } from "notion-types";
 import { getPageTitle } from "notion-utils";
@@ -34,12 +35,20 @@ export default function PageTitle(props: Props) {
       </StyledBanner> */}
       <StyledBanner>
         <StyledAlert>
-          <StyledSpan>강의로 들으시려면</StyledSpan>
+          <StyledBoldSpan>한 입 크기로 잘라먹는 리액트의</StyledBoldSpan>
           &nbsp;
-          <StyledLink href={`/2c1fc37a61a6486fb6f8ec72978a76dc`}>
-            (인프런)한 입 크기로 잘라먹는 리액트 10% 쿠폰 받기 (기간
-            한정)
-          </StyledLink>
+          <StyledSpan>강의 자료 입니다</StyledSpan>
+          <br />
+          <StyledA
+            target="_blank"
+            href={`https://product.kyobobook.co.kr/detail/S000201352991`}
+          >
+            도서로 보기
+          </StyledA>
+          &nbsp; &nbsp;
+          <StyledA target="_blank" href={`https://link.onebitefe.com/r/5qkqq4`}>
+            강의로 보기 (10% 할인쿠폰)
+          </StyledA>
         </StyledAlert>
       </StyledBanner>
     </PageTitleWrapper>
