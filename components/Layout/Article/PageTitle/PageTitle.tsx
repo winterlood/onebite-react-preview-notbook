@@ -7,20 +7,18 @@ import {
   StyledAlert,
   StyledBoldSpan,
 } from "./PageTitle.style";
-import { ExtendedRecordMap } from "notion-types";
-import { getPageTitle } from "notion-utils";
 import { StyledLink } from "./PageTitle.style";
 
 interface Props {
-  recordMap: ExtendedRecordMap;
+  title?: string | null;
 }
 
 export default function PageTitle(props: Props) {
-  const { recordMap } = props;
+  const { title } = props;
 
   return (
     <PageTitleWrapper>
-      <StyledTitle>{getPageTitle(recordMap)}</StyledTitle>
+      <StyledTitle>{title}</StyledTitle>
       {/* <StyledBanner>
         <StyledAlert>
           <StyledSpan>이 페이지는 도서</StyledSpan>&nbsp;

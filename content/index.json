@@ -1,0 +1,956 @@
+{
+  "sections": [
+    {
+      "index": 0,
+      "title": "0. 들어가며",
+      "chapters": [
+        {
+          "id": "28800fda-0203-4c13-b060-3fa0fd313518",
+          "last_edited_time": 1679362857923,
+          "title": "지은이의 글",
+          "index": 0,
+          "section_title": "0. 들어가며",
+          "section_index": 0
+        },
+        {
+          "id": "dd602d38-5c1d-4fcc-830d-46a707787485",
+          "last_edited_time": 1679362925703,
+          "title": "이 책의 구성",
+          "index": 1,
+          "section_title": "0. 들어가며",
+          "section_index": 0
+        },
+        {
+          "id": "463341d9-9b5d-407a-a51f-613e81e4854e",
+          "last_edited_time": 1679362865673,
+          "title": "감사의 글",
+          "index": 2,
+          "section_title": "0. 들어가며",
+          "section_index": 0
+        },
+        {
+          "id": "60c52bfb-e904-46b0-8894-fbbc93b2bcf4",
+          "last_edited_time": 1679362865673,
+          "title": "베타테스터의 글",
+          "index": 3,
+          "section_title": "0. 들어가며",
+          "section_index": 0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "1. 자바스크립트 기초",
+      "chapters": [
+        {
+          "id": "9e8bcea1-0ee4-4a4d-9215-7293847d56c5",
+          "last_edited_time": 1679362862161,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "e69bab6d-d4dd-4e2b-9953-5aeb0cfcadf2",
+          "last_edited_time": 1700706960212,
+          "title": "1. 처음 만나는 자바스크립트",
+          "index": 1,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "96e122e2-93be-45f5-a062-77b5813de6ec",
+          "last_edited_time": 1679300986154,
+          "title": "2. 변수와 상수",
+          "index": 2,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "94b8f97b-d093-462d-b9fd-2af9d41a7ff8",
+          "last_edited_time": 1679300986149,
+          "title": "3. 자료형",
+          "index": 3,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "58dd9ccd-95ec-4fc7-95f9-81e4c424dec9",
+          "last_edited_time": 1679300986155,
+          "title": "4. 형 변환",
+          "index": 4,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "92babab6-23c7-41b0-83c0-42908596bc9d",
+          "last_edited_time": 1679317042432,
+          "title": "5. 연산자",
+          "index": 5,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "1571a8bd-29c3-44b4-99e7-b0bd693fbd3a",
+          "last_edited_time": 1679300986150,
+          "title": "6. 조건문",
+          "index": 6,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "863663d2-5612-4beb-b2df-fc263e73b913",
+          "last_edited_time": 1679300986143,
+          "title": "7. 반복문",
+          "index": 7,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "d2ffdbe0-c061-4d52-9d83-d4f39e401680",
+          "last_edited_time": 1679300986145,
+          "title": "8. 함수",
+          "index": 8,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "e4741df6-dffe-4324-8ffa-3d20f9f42ec5",
+          "last_edited_time": 1679300986154,
+          "title": "9. 스코프",
+          "index": 9,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "1d349805-8acd-43c9-a231-2a131222d833",
+          "last_edited_time": 1679300986147,
+          "title": "10. 객체",
+          "index": 10,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        },
+        {
+          "id": "ccff0ac7-3619-4c67-89c8-869af2f6aef9",
+          "last_edited_time": 1679300986150,
+          "title": "11. 배열",
+          "index": 11,
+          "section_title": "1. 자바스크립트 기초",
+          "section_index": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "2. 자바스크립트 실전",
+      "chapters": [
+        {
+          "id": "8a98c57c-4c0d-492d-972d-6ee1958031e3",
+          "last_edited_time": 1679300986154,
+          "title": "0. 장소개",
+          "index": 0,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "5c150a66-47b0-4e9e-91db-b318a7ff4cd4",
+          "last_edited_time": 1679300986148,
+          "title": "1. truthy&falsy",
+          "index": 1,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "9290a7b9-3636-4f61-b4b4-8970c2ca77c7",
+          "last_edited_time": 1679300986146,
+          "title": "2. 단락 평가",
+          "index": 2,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "0f33b159-6b19-433b-8db4-68d6b4a122e0",
+          "last_edited_time": 1679300986148,
+          "title": "3. 객체 자료형 자세히 살펴보기",
+          "index": 3,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "db7b164a-ae7a-4c61-870f-49695aedb9f6",
+          "last_edited_time": 1679300986154,
+          "title": "4. 반복문 응용하기",
+          "index": 4,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "85ffb815-e3cd-4c97-b00f-0dd96d22b65b",
+          "last_edited_time": 1679300986151,
+          "title": "5. 구조 분해 할당",
+          "index": 5,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "4e81b92b-4097-4fd8-8c67-09a7588c94d6",
+          "last_edited_time": 1679300986149,
+          "title": "6. 스프레드 연산자와 rest 매개변수",
+          "index": 6,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "fc0a951e-41cd-4cc5-8f47-7507965bbe41",
+          "last_edited_time": 1679300986148,
+          "title": "7. 배열과 메서드",
+          "index": 7,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "552c8adb-5f96-4dac-8a93-750d65f1fb71",
+          "last_edited_time": 1679300986145,
+          "title": "8. Date 객체와 날짜",
+          "index": 8,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        },
+        {
+          "id": "45ee7daf-0c32-4f40-9b20-b7bba338d39f",
+          "last_edited_time": 1679300986151,
+          "title": "9. 비동기 처리",
+          "index": 9,
+          "section_title": "2. 자바스크립트 실전",
+          "section_index": 2
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "3. Node.js",
+      "chapters": [
+        {
+          "id": "89128835-ac50-422c-9154-b323076dfab8",
+          "last_edited_time": 1679300986153,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 3
+        },
+        {
+          "id": "8f0a2415-756a-4c3c-8c72-b6f3218c8743",
+          "last_edited_time": 1679300986155,
+          "title": "1. Node.js 란?",
+          "index": 1,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        },
+        {
+          "id": "0c23e0c4-8c1d-4f40-9665-26d2c1b31107",
+          "last_edited_time": 1679300986149,
+          "title": "2. Node.js 환경 설정하기",
+          "index": 2,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        },
+        {
+          "id": "7d1afac7-9b3b-4c51-8ea6-5b9ffb4a09a7",
+          "last_edited_time": 1679300986152,
+          "title": "3. 비주얼 스튜디오 코드",
+          "index": 3,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        },
+        {
+          "id": "354e8af5-d3cf-46d2-90b4-6f9ac6c0ad8c",
+          "last_edited_time": 1679300986145,
+          "title": "4. Node.js 패키지",
+          "index": 4,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        },
+        {
+          "id": "4683fda0-82e5-452f-98fe-a3aab428d2b7",
+          "last_edited_time": 1679300986148,
+          "title": "5. Node.js 모듈 시스템",
+          "index": 5,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        },
+        {
+          "id": "be2818e0-c7f7-44cc-9d7e-2b51fda75113",
+          "last_edited_time": 1679300986144,
+          "title": "6. 라이브러리 사용하기",
+          "index": 6,
+          "section_title": "3. Node.js",
+          "section_index": 3
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "4. 리액트 시작하기",
+      "chapters": [
+        {
+          "id": "56ede89d-5134-45af-bd7a-c151449b752c",
+          "last_edited_time": 1679300986153,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "4. 리액트 시작하기",
+          "section_index": 4
+        },
+        {
+          "id": "4cc5d8e5-5c3f-4060-a266-a6db5526b9fa",
+          "last_edited_time": 1679300986153,
+          "title": "1. 리액트의 특징",
+          "index": 1,
+          "section_title": "4. 리액트 시작하기",
+          "section_index": 4
+        },
+        {
+          "id": "ac676c98-fbbc-4001-9523-56a3b64ab338",
+          "last_edited_time": 1679300986154,
+          "title": "2. 리액트 앱 만들기",
+          "index": 2,
+          "section_title": "4. 리액트 시작하기",
+          "section_index": 4
+        },
+        {
+          "id": "5fe9b24e-69c9-4062-8f6e-68dc35f830f1",
+          "last_edited_time": 1679300986146,
+          "title": "3. 리액트 앱의 동작 원리",
+          "index": 3,
+          "section_title": "4. 리액트 시작하기",
+          "section_index": 4
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "5. 리액트의 기본 기능 다루기",
+      "chapters": [
+        {
+          "id": "8c7c4423-01d2-4abc-9616-e95298522778",
+          "last_edited_time": 1679300986153,
+          "title": "1. 컴포넌트",
+          "index": 1,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        },
+        {
+          "id": "d60d9a2c-18ed-4488-9dc9-09a0cd205998",
+          "last_edited_time": 1679300986154,
+          "title": "2. JSX",
+          "index": 2,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        },
+        {
+          "id": "c89cba30-39b6-4094-85f6-f87a16842028",
+          "last_edited_time": 1679300986147,
+          "title": "3. 컴포넌트에 값 전달하기",
+          "index": 3,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        },
+        {
+          "id": "f5477777-a3f2-4fe2-8a80-4bb6142c679b",
+          "last_edited_time": 1679300986152,
+          "title": "4. 이벤트 처리하기",
+          "index": 4,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        },
+        {
+          "id": "c167aa87-b661-4d35-9bc3-2a5e5434d4ac",
+          "last_edited_time": 1679300986155,
+          "title": "5. 컴포넌트와 상태",
+          "index": 5,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        },
+        {
+          "id": "3cef124b-4664-40bc-8b13-1591c31b0e39",
+          "last_edited_time": 1679300986147,
+          "title": "6. Ref",
+          "index": 6,
+          "section_title": "5. 리액트의 기본 기능 다루기",
+          "section_index": 5
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "p1. 카운터 앱 만들기",
+      "chapters": [
+        {
+          "id": "84871857-86ae-4f25-871a-af8cb96def47",
+          "last_edited_time": 1679300986149,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "p1. 카운터 앱 만들기",
+          "section_index": 6
+        },
+        {
+          "id": "4c5a107c-4da4-4b81-a705-8fc6b9fcbe88",
+          "last_edited_time": 1679300986144,
+          "title": "1. 프로젝트 준비하기",
+          "index": 1,
+          "section_title": "p1. 카운터 앱 만들기",
+          "section_index": 6
+        },
+        {
+          "id": "9ad9f667-02ef-4665-95fd-aaf4d4a3407d",
+          "last_edited_time": 1679300986149,
+          "title": "2. UI 구현하기",
+          "index": 2,
+          "section_title": "p1. 카운터 앱 만들기",
+          "section_index": 6
+        },
+        {
+          "id": "382d9451-1d05-499d-9129-f6a213c65ad3",
+          "last_edited_time": 1679300986155,
+          "title": "3. 기능 구현하기",
+          "index": 3,
+          "section_title": "p1. 카운터 앱 만들기",
+          "section_index": 6
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "6. 라이프 사이클과 리액트 개발자 도구",
+      "chapters": [
+        {
+          "id": "80392646-fb79-4003-b897-708e77c8581a",
+          "last_edited_time": 1679300986146,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "6. 라이프 사이클과 리액트 개발자 도구",
+          "section_index": 7
+        },
+        {
+          "id": "ca41b073-bd93-453a-918e-9a243b708eef",
+          "last_edited_time": 1679300986153,
+          "title": "1. 리액트 컴포넌트와 라이프 사이클",
+          "index": 1,
+          "section_title": "6. 라이프 사이클과 리액트 개발자 도구",
+          "section_index": 7
+        },
+        {
+          "id": "eb666fea-0170-4399-a1d0-5dbb77e8b12b",
+          "last_edited_time": 1679300986144,
+          "title": "2. useEffect",
+          "index": 2,
+          "section_title": "6. 라이프 사이클과 리액트 개발자 도구",
+          "section_index": 7
+        },
+        {
+          "id": "e102c16e-3632-4159-aeb0-391695b54271",
+          "last_edited_time": 1679300986151,
+          "title": "3. 리액트 개발자 도구",
+          "index": 3,
+          "section_title": "6. 라이프 사이클과 리액트 개발자 도구",
+          "section_index": 7
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "p2. 할일 관리 앱 만들기",
+      "chapters": [
+        {
+          "id": "5ac86209-acbc-4cb5-8a10-35fa9ed326e6",
+          "last_edited_time": 1679300986152,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "905b63a0-3bf0-4603-bbe7-a7adf934f4aa",
+          "last_edited_time": 1679300986144,
+          "title": "1. 프로젝트 준비하기",
+          "index": 1,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "f7dbb35a-201f-49f6-bbb6-039dee4dd77f",
+          "last_edited_time": 1679300986156,
+          "title": "2. UI 구현하기",
+          "index": 2,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "06fa32c2-493a-45c6-8e28-7b4f1e8a95ed",
+          "last_edited_time": 1679300986146,
+          "title": "3. 기능 구현 준비하기",
+          "index": 3,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "bb4c1452-9e4f-4d60-b7df-619211f23941",
+          "last_edited_time": 1679300986151,
+          "title": "4. Create: 할 일 추가하기",
+          "index": 4,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "a516555b-a38f-492b-9cf9-d7a463bdc9fd",
+          "last_edited_time": 1679300986152,
+          "title": "5. Read: 할 일 리스트 렌더링하기",
+          "index": 5,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "c5f99372-1edd-4036-bc9d-3e73cb46a9f1",
+          "last_edited_time": 1679300986152,
+          "title": "6. Update: 할 일 수정하기",
+          "index": 6,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        },
+        {
+          "id": "8b2a2e7b-4f8e-4d58-a3dc-b0290930dbeb",
+          "last_edited_time": 1679300986150,
+          "title": "7. Delete: 할 일 삭제하기",
+          "index": 7,
+          "section_title": "p2. 할일 관리 앱 만들기",
+          "section_index": 8
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "7. useReducer와 상태관리",
+      "chapters": [
+        {
+          "id": "4f60ca5e-1979-4b3e-b579-b1e93283c078",
+          "last_edited_time": 1679300986154,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "7. useReducer와 상태관리",
+          "section_index": 9
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "8. 최적화",
+      "chapters": [
+        {
+          "id": "fe123cd0-2f52-48bd-88e6-25bd22c129bb",
+          "last_edited_time": 1679300986153,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "8. 최적화",
+          "section_index": 10
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "9. 컴포넌트 트리 전체에 데이터 공급하기",
+      "chapters": [
+        {
+          "id": "b67b4b4b-0f92-4480-8e86-c3e35c74a2d6",
+          "last_edited_time": 1679300986154,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "9. 컴포넌트 트리 전체에 데이터 공급하기",
+          "section_index": 11
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "p3. 감정 일기장 만들기",
+      "chapters": [
+        {
+          "id": "2bac40b7-6519-4ad2-902c-3e243136eb81",
+          "last_edited_time": 1679300986150,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "p3. 감정 일기장 만들기",
+          "section_index": 12
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "title": "10. 웹 스토리지 이용하기",
+      "chapters": [
+        {
+          "id": "d27851d8-5c22-4f62-96c9-340c8837f936",
+          "last_edited_time": 1679300986154,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "10. 웹 스토리지 이용하기",
+          "section_index": 13
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "title": "11. 감정 일기장 배포하기",
+      "chapters": [
+        {
+          "id": "5efda2aa-3156-41a2-9abb-906deddfb912",
+          "last_edited_time": 1679300986145,
+          "title": "0. 장 소개",
+          "index": 0,
+          "section_title": "11. 감정 일기장 배포하기",
+          "section_index": 14
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "463341d9-9b5d-407a-a51f-613e81e4854e": {
+      "id": "463341d9-9b5d-407a-a51f-613e81e4854e",
+      "title": "감사의 글",
+      "last_edited_time": 1679362865673
+    },
+    "60c52bfb-e904-46b0-8894-fbbc93b2bcf4": {
+      "id": "60c52bfb-e904-46b0-8894-fbbc93b2bcf4",
+      "title": "베타테스터의 글",
+      "last_edited_time": 1679362865673
+    },
+    "dd602d38-5c1d-4fcc-830d-46a707787485": {
+      "id": "dd602d38-5c1d-4fcc-830d-46a707787485",
+      "title": "이 책의 구성",
+      "last_edited_time": 1679362925703
+    },
+    "28800fda-0203-4c13-b060-3fa0fd313518": {
+      "id": "28800fda-0203-4c13-b060-3fa0fd313518",
+      "title": "지은이의 글",
+      "last_edited_time": 1679362857923
+    },
+    "f7dbb35a-201f-49f6-bbb6-039dee4dd77f": {
+      "id": "f7dbb35a-201f-49f6-bbb6-039dee4dd77f",
+      "title": "2. UI 구현하기",
+      "last_edited_time": 1679300986156
+    },
+    "382d9451-1d05-499d-9129-f6a213c65ad3": {
+      "id": "382d9451-1d05-499d-9129-f6a213c65ad3",
+      "title": "3. 기능 구현하기",
+      "last_edited_time": 1679300986155
+    },
+    "58dd9ccd-95ec-4fc7-95f9-81e4c424dec9": {
+      "id": "58dd9ccd-95ec-4fc7-95f9-81e4c424dec9",
+      "title": "4. 형 변환",
+      "last_edited_time": 1679300986155
+    },
+    "8f0a2415-756a-4c3c-8c72-b6f3218c8743": {
+      "id": "8f0a2415-756a-4c3c-8c72-b6f3218c8743",
+      "title": "1. Node.js 란?",
+      "last_edited_time": 1679300986155
+    },
+    "c167aa87-b661-4d35-9bc3-2a5e5434d4ac": {
+      "id": "c167aa87-b661-4d35-9bc3-2a5e5434d4ac",
+      "title": "5. 컴포넌트와 상태",
+      "last_edited_time": 1679300986155
+    },
+    "4f60ca5e-1979-4b3e-b579-b1e93283c078": {
+      "id": "4f60ca5e-1979-4b3e-b579-b1e93283c078",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986154
+    },
+    "8a98c57c-4c0d-492d-972d-6ee1958031e3": {
+      "id": "8a98c57c-4c0d-492d-972d-6ee1958031e3",
+      "title": "0. 장소개",
+      "last_edited_time": 1679300986154
+    },
+    "96e122e2-93be-45f5-a062-77b5813de6ec": {
+      "id": "96e122e2-93be-45f5-a062-77b5813de6ec",
+      "title": "2. 변수와 상수",
+      "last_edited_time": 1679300986154
+    },
+    "ac676c98-fbbc-4001-9523-56a3b64ab338": {
+      "id": "ac676c98-fbbc-4001-9523-56a3b64ab338",
+      "title": "2. 리액트 앱 만들기",
+      "last_edited_time": 1679300986154
+    },
+    "b67b4b4b-0f92-4480-8e86-c3e35c74a2d6": {
+      "id": "b67b4b4b-0f92-4480-8e86-c3e35c74a2d6",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986154
+    },
+    "d27851d8-5c22-4f62-96c9-340c8837f936": {
+      "id": "d27851d8-5c22-4f62-96c9-340c8837f936",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986154
+    },
+    "d60d9a2c-18ed-4488-9dc9-09a0cd205998": {
+      "id": "d60d9a2c-18ed-4488-9dc9-09a0cd205998",
+      "title": "2. JSX",
+      "last_edited_time": 1679300986154
+    },
+    "db7b164a-ae7a-4c61-870f-49695aedb9f6": {
+      "id": "db7b164a-ae7a-4c61-870f-49695aedb9f6",
+      "title": "4. 반복문 응용하기",
+      "last_edited_time": 1679300986154
+    },
+    "e4741df6-dffe-4324-8ffa-3d20f9f42ec5": {
+      "id": "e4741df6-dffe-4324-8ffa-3d20f9f42ec5",
+      "title": "9. 스코프",
+      "last_edited_time": 1679300986154
+    },
+    "4cc5d8e5-5c3f-4060-a266-a6db5526b9fa": {
+      "id": "4cc5d8e5-5c3f-4060-a266-a6db5526b9fa",
+      "title": "1. 리액트의 특징",
+      "last_edited_time": 1679300986153
+    },
+    "56ede89d-5134-45af-bd7a-c151449b752c": {
+      "id": "56ede89d-5134-45af-bd7a-c151449b752c",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986153
+    },
+    "89128835-ac50-422c-9154-b323076dfab8": {
+      "id": "89128835-ac50-422c-9154-b323076dfab8",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986153
+    },
+    "8c7c4423-01d2-4abc-9616-e95298522778": {
+      "id": "8c7c4423-01d2-4abc-9616-e95298522778",
+      "title": "1. 컴포넌트",
+      "last_edited_time": 1679300986153
+    },
+    "92babab6-23c7-41b0-83c0-42908596bc9d": {
+      "id": "92babab6-23c7-41b0-83c0-42908596bc9d",
+      "title": "5. 연산자",
+      "last_edited_time": 1679317042432
+    },
+    "ca41b073-bd93-453a-918e-9a243b708eef": {
+      "id": "ca41b073-bd93-453a-918e-9a243b708eef",
+      "title": "1. 리액트 컴포넌트와 라이프 사이클",
+      "last_edited_time": 1679300986153
+    },
+    "fe123cd0-2f52-48bd-88e6-25bd22c129bb": {
+      "id": "fe123cd0-2f52-48bd-88e6-25bd22c129bb",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986153
+    },
+    "5ac86209-acbc-4cb5-8a10-35fa9ed326e6": {
+      "id": "5ac86209-acbc-4cb5-8a10-35fa9ed326e6",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986152
+    },
+    "7d1afac7-9b3b-4c51-8ea6-5b9ffb4a09a7": {
+      "id": "7d1afac7-9b3b-4c51-8ea6-5b9ffb4a09a7",
+      "title": "3. 비주얼 스튜디오 코드",
+      "last_edited_time": 1679300986152
+    },
+    "a516555b-a38f-492b-9cf9-d7a463bdc9fd": {
+      "id": "a516555b-a38f-492b-9cf9-d7a463bdc9fd",
+      "title": "5. Read: 할 일 리스트 렌더링하기",
+      "last_edited_time": 1679300986152
+    },
+    "c5f99372-1edd-4036-bc9d-3e73cb46a9f1": {
+      "id": "c5f99372-1edd-4036-bc9d-3e73cb46a9f1",
+      "title": "6. Update: 할 일 수정하기",
+      "last_edited_time": 1679300986152
+    },
+    "f5477777-a3f2-4fe2-8a80-4bb6142c679b": {
+      "id": "f5477777-a3f2-4fe2-8a80-4bb6142c679b",
+      "title": "4. 이벤트 처리하기",
+      "last_edited_time": 1679300986152
+    },
+    "45ee7daf-0c32-4f40-9b20-b7bba338d39f": {
+      "id": "45ee7daf-0c32-4f40-9b20-b7bba338d39f",
+      "title": "9. 비동기 처리",
+      "last_edited_time": 1679300986151
+    },
+    "85ffb815-e3cd-4c97-b00f-0dd96d22b65b": {
+      "id": "85ffb815-e3cd-4c97-b00f-0dd96d22b65b",
+      "title": "5. 구조 분해 할당",
+      "last_edited_time": 1679300986151
+    },
+    "bb4c1452-9e4f-4d60-b7df-619211f23941": {
+      "id": "bb4c1452-9e4f-4d60-b7df-619211f23941",
+      "title": "4. Create: 할 일 추가하기",
+      "last_edited_time": 1679300986151
+    },
+    "e102c16e-3632-4159-aeb0-391695b54271": {
+      "id": "e102c16e-3632-4159-aeb0-391695b54271",
+      "title": "3. 리액트 개발자 도구",
+      "last_edited_time": 1679300986151
+    },
+    "1571a8bd-29c3-44b4-99e7-b0bd693fbd3a": {
+      "id": "1571a8bd-29c3-44b4-99e7-b0bd693fbd3a",
+      "title": "6. 조건문",
+      "last_edited_time": 1679300986150
+    },
+    "2bac40b7-6519-4ad2-902c-3e243136eb81": {
+      "id": "2bac40b7-6519-4ad2-902c-3e243136eb81",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986150
+    },
+    "8b2a2e7b-4f8e-4d58-a3dc-b0290930dbeb": {
+      "id": "8b2a2e7b-4f8e-4d58-a3dc-b0290930dbeb",
+      "title": "7. Delete: 할 일 삭제하기",
+      "last_edited_time": 1679300986150
+    },
+    "9e8bcea1-0ee4-4a4d-9215-7293847d56c5": {
+      "id": "9e8bcea1-0ee4-4a4d-9215-7293847d56c5",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679362862161
+    },
+    "ccff0ac7-3619-4c67-89c8-869af2f6aef9": {
+      "id": "ccff0ac7-3619-4c67-89c8-869af2f6aef9",
+      "title": "11. 배열",
+      "last_edited_time": 1679300986150
+    },
+    "0c23e0c4-8c1d-4f40-9665-26d2c1b31107": {
+      "id": "0c23e0c4-8c1d-4f40-9665-26d2c1b31107",
+      "title": "2. Node.js 환경 설정하기",
+      "last_edited_time": 1679300986149
+    },
+    "4e81b92b-4097-4fd8-8c67-09a7588c94d6": {
+      "id": "4e81b92b-4097-4fd8-8c67-09a7588c94d6",
+      "title": "6. 스프레드 연산자와 rest 매개변수",
+      "last_edited_time": 1679300986149
+    },
+    "84871857-86ae-4f25-871a-af8cb96def47": {
+      "id": "84871857-86ae-4f25-871a-af8cb96def47",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986149
+    },
+    "94b8f97b-d093-462d-b9fd-2af9d41a7ff8": {
+      "id": "94b8f97b-d093-462d-b9fd-2af9d41a7ff8",
+      "title": "3. 자료형",
+      "last_edited_time": 1679300986149
+    },
+    "9ad9f667-02ef-4665-95fd-aaf4d4a3407d": {
+      "id": "9ad9f667-02ef-4665-95fd-aaf4d4a3407d",
+      "title": "2. UI 구현하기",
+      "last_edited_time": 1679300986149
+    },
+    "0f33b159-6b19-433b-8db4-68d6b4a122e0": {
+      "id": "0f33b159-6b19-433b-8db4-68d6b4a122e0",
+      "title": "3. 객체 자료형 자세히 살펴보기",
+      "last_edited_time": 1679300986148
+    },
+    "4683fda0-82e5-452f-98fe-a3aab428d2b7": {
+      "id": "4683fda0-82e5-452f-98fe-a3aab428d2b7",
+      "title": "5. Node.js 모듈 시스템",
+      "last_edited_time": 1679300986148
+    },
+    "5c150a66-47b0-4e9e-91db-b318a7ff4cd4": {
+      "id": "5c150a66-47b0-4e9e-91db-b318a7ff4cd4",
+      "title": "1. truthy&falsy",
+      "last_edited_time": 1679300986148
+    },
+    "fc0a951e-41cd-4cc5-8f47-7507965bbe41": {
+      "id": "fc0a951e-41cd-4cc5-8f47-7507965bbe41",
+      "title": "7. 배열과 메서드",
+      "last_edited_time": 1679300986148
+    },
+    "1d349805-8acd-43c9-a231-2a131222d833": {
+      "id": "1d349805-8acd-43c9-a231-2a131222d833",
+      "title": "10. 객체",
+      "last_edited_time": 1679300986147
+    },
+    "3cef124b-4664-40bc-8b13-1591c31b0e39": {
+      "id": "3cef124b-4664-40bc-8b13-1591c31b0e39",
+      "title": "6. Ref",
+      "last_edited_time": 1679300986147
+    },
+    "c89cba30-39b6-4094-85f6-f87a16842028": {
+      "id": "c89cba30-39b6-4094-85f6-f87a16842028",
+      "title": "3. 컴포넌트에 값 전달하기",
+      "last_edited_time": 1679300986147
+    },
+    "e69bab6d-d4dd-4e2b-9953-5aeb0cfcadf2": {
+      "id": "e69bab6d-d4dd-4e2b-9953-5aeb0cfcadf2",
+      "title": "1. 처음 만나는 자바스크립트",
+      "last_edited_time": 1700706960212
+    },
+    "06fa32c2-493a-45c6-8e28-7b4f1e8a95ed": {
+      "id": "06fa32c2-493a-45c6-8e28-7b4f1e8a95ed",
+      "title": "3. 기능 구현 준비하기",
+      "last_edited_time": 1679300986146
+    },
+    "5fe9b24e-69c9-4062-8f6e-68dc35f830f1": {
+      "id": "5fe9b24e-69c9-4062-8f6e-68dc35f830f1",
+      "title": "3. 리액트 앱의 동작 원리",
+      "last_edited_time": 1679300986146
+    },
+    "80392646-fb79-4003-b897-708e77c8581a": {
+      "id": "80392646-fb79-4003-b897-708e77c8581a",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986146
+    },
+    "9290a7b9-3636-4f61-b4b4-8970c2ca77c7": {
+      "id": "9290a7b9-3636-4f61-b4b4-8970c2ca77c7",
+      "title": "2. 단락 평가",
+      "last_edited_time": 1679300986146
+    },
+    "354e8af5-d3cf-46d2-90b4-6f9ac6c0ad8c": {
+      "id": "354e8af5-d3cf-46d2-90b4-6f9ac6c0ad8c",
+      "title": "4. Node.js 패키지",
+      "last_edited_time": 1679300986145
+    },
+    "552c8adb-5f96-4dac-8a93-750d65f1fb71": {
+      "id": "552c8adb-5f96-4dac-8a93-750d65f1fb71",
+      "title": "8. Date 객체와 날짜",
+      "last_edited_time": 1679300986145
+    },
+    "5efda2aa-3156-41a2-9abb-906deddfb912": {
+      "id": "5efda2aa-3156-41a2-9abb-906deddfb912",
+      "title": "0. 장 소개",
+      "last_edited_time": 1679300986145
+    },
+    "d2ffdbe0-c061-4d52-9d83-d4f39e401680": {
+      "id": "d2ffdbe0-c061-4d52-9d83-d4f39e401680",
+      "title": "8. 함수",
+      "last_edited_time": 1679300986145
+    },
+    "4c5a107c-4da4-4b81-a705-8fc6b9fcbe88": {
+      "id": "4c5a107c-4da4-4b81-a705-8fc6b9fcbe88",
+      "title": "1. 프로젝트 준비하기",
+      "last_edited_time": 1679300986144
+    },
+    "905b63a0-3bf0-4603-bbe7-a7adf934f4aa": {
+      "id": "905b63a0-3bf0-4603-bbe7-a7adf934f4aa",
+      "title": "1. 프로젝트 준비하기",
+      "last_edited_time": 1679300986144
+    },
+    "be2818e0-c7f7-44cc-9d7e-2b51fda75113": {
+      "id": "be2818e0-c7f7-44cc-9d7e-2b51fda75113",
+      "title": "6. 라이브러리 사용하기",
+      "last_edited_time": 1679300986144
+    },
+    "eb666fea-0170-4399-a1d0-5dbb77e8b12b": {
+      "id": "eb666fea-0170-4399-a1d0-5dbb77e8b12b",
+      "title": "2. useEffect",
+      "last_edited_time": 1679300986144
+    },
+    "863663d2-5612-4beb-b2df-fc263e73b913": {
+      "id": "863663d2-5612-4beb-b2df-fc263e73b913",
+      "title": "7. 반복문",
+      "last_edited_time": 1679300986143
+    },
+    "f1e267da-b37d-44ab-8da9-2c188e38fda1": {
+      "id": "f1e267da-b37d-44ab-8da9-2c188e38fda1",
+      "title": "소개",
+      "last_edited_time": 1679622780120
+    },
+    "2c1fc37a-61a6-486f-b6f8-ec72978a76dc": {
+      "id": "2c1fc37a-61a6-486f-b6f8-ec72978a76dc",
+      "title": "온라인 강의",
+      "last_edited_time": 1749258635547
+    },
+    "5ce0c0c2-a786-4c71-9925-76e53182cc1f": {
+      "id": "5ce0c0c2-a786-4c71-9925-76e53182cc1f",
+      "title": "도서 안내",
+      "last_edited_time": 1679983474926
+    }
+  }
+}

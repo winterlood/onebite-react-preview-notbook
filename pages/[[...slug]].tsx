@@ -1,21 +1,24 @@
-import { getSections, fetchRecordMap } from "lib/notion";
+import {
+  getAllPageIds,
+  getPageContent,
+  getSections,
+  toDashedUuid,
+} from "lib/content";
 import { GetStaticProps } from "next";
 import { Section } from "types/content";
-import { ExtendedRecordMap } from "notion-types";
 import Layout from "../components/Layout/index";
 import { createContext, useEffect } from "react";
-import { getPageTitle } from "notion-utils";
 import config from "config/config.json";
 import OpenGraphHead from "components/OpenGraphHead";
-import { fetchAllPages } from "../lib/notion";
 import { pageViewGA } from "../hooks/usePageViewEffect";
 import { useRouter } from "next/router";
 
 interface Props {
   pageID: string;
   sections: Section[];
-  recordMap: ExtendedRecordMap;
+  markdown: string | null;
   pageTitle?: string;
+  chapterTitle: string | null;
   currentSection?: Section;
 }
 
@@ -53,54 +56,36 @@ export default function Page(props: Props) {
 }
 
 export const getStaticPaths = async () => {
-  const renderMode = config.renderMode as "SSG" | "ISR" | "ISR_WITH_SSG";
-  if (renderMode === "SSG" || renderMode === "ISR_WITH_SSG") {
-    try {
-      const pages = await fetchAllPages();
-      console.log(`pre-render page count : ${pages.length}`);
-      return {
-        fallback: renderMode === "SSG" ? false : "blocking",
-        paths: pages.map((page) => ({ params: { slug: [page.id] } })),
-      };
-    } catch (err) {
-      // when fetchPage is failed running like ISR
-      console.log(`fetchPage failed: ${err}`);
-      console.log(`run like ISR`);
-      return {
-        fallback: "blocking",
-        paths: [],
-      };
-    }
-  }
-  // default rendermode is ISR
+  const ids = getAllPageIds();
+
+  // 기존 링크가 대시 없는 ID 로도 퍼져 있어 두 형태 모두 사전 렌더링한다
+  const slugs = new Set<string>();
+  ids.forEach((id) => {
+    slugs.add(id);
+    slugs.add(id.replace(/-/g, ""));
+  });
+
+  console.log(`pre-render page count : ${slugs.size}`);
+
+  // 루트(`/`) 와 알 수 없는 경로는 요청 시점에 만든다
   return {
-    paths: [],
     fallback: "blocking",
+    paths: Array.from(slugs).map((slug) => ({ params: { slug: [slug] } })),
   };
 };
-
-function isRejected<T>(
-  req: PromiseSettledResult<T>
-): req is PromiseRejectedResult {
-  return req.status === "rejected";
-}
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params as { slug?: string[] };
 
-  const pageID = Array.isArray(slug) ? slug[0] : config.homePageID;
+  const rawPageID = Array.isArray(slug) ? slug[0] : config.homePageID;
+  const pageID = toDashedUuid(rawPageID);
   const isContentPage = Array.isArray(slug) && slug.length === 1;
 
-  const [sectionsReq, recordMapReq] = await Promise.allSettled([
-    getSections(),
-    fetchRecordMap(pageID),
-  ]);
-
-  const sections = isRejected(sectionsReq) ? [] : sectionsReq.value;
-  const recordMap = isRejected(recordMapReq) ? null : recordMapReq.value;
+  const sections = getSections();
+  const pageContent = getPageContent(pageID);
 
   let currentSection: Section | null = null;
-  if (sections && isContentPage) {
+  if (isContentPage) {
     currentSection =
       sections.find((section) => {
         return (
@@ -109,10 +94,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       }) || null;
   }
 
-  let chapterTitle: string | undefined;
-  if (recordMap) {
-    chapterTitle = getPageTitle(recordMap);
-  }
+  const chapterTitle = pageContent?.title ?? null;
 
   let pageTitle: string | null = null;
   if (chapterTitle) {
@@ -125,12 +107,12 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: {
-      pageID: pageID || "index",
-      pageTitle: pageTitle,
-      currentSection: currentSection,
-      sections: sections,
-      recordMap: recordMap,
+      pageID,
+      pageTitle,
+      chapterTitle,
+      currentSection,
+      sections,
+      markdown: pageContent?.markdown ?? null,
     },
-    revalidate: 1,
   };
 };

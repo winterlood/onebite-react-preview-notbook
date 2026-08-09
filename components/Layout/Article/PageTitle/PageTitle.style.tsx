@@ -8,7 +8,19 @@ export const PageTitleWrapper = styled("div")`
   border-bottom: 1px solid var(--bg-opacity-color);
 `;
 
-export const StyledTitle = styled("div")``;
+export const StyledTitle = styled("h1")`
+  font-family: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--fg-color);
+  margin: 0;
+  letter-spacing: -0.01em;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
+`;
 
 export const StyledBanner = styled("div")`
   padding-top: 1rem;

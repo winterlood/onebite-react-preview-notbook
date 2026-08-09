@@ -1,5 +1,3 @@
-import style from "./Code.module.scss";
-
 // syntax highlighter
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 // codes
@@ -8,10 +6,14 @@ import javascript from "react-syntax-highlighter/dist/esm/languages/prism/javasc
 import typescript from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
 import json from "react-syntax-highlighter/dist/esm/languages/prism/json";
 import c from "react-syntax-highlighter/dist/esm/languages/prism/c";
+import markup from "react-syntax-highlighter/dist/esm/languages/prism/markup";
+import css from "react-syntax-highlighter/dist/esm/languages/prism/css";
+import bash from "react-syntax-highlighter/dist/esm/languages/prism/bash";
+import diff from "react-syntax-highlighter/dist/esm/languages/prism/diff";
 
 // themes
 import oneDark from "react-syntax-highlighter/dist/esm/styles/prism/one-dark";
-import Image from "next/image";
+
 import {
   CodeCaption,
   CodeWrapper,
@@ -20,26 +22,27 @@ import {
   TopbarRightCol,
   CopyButton,
 } from "./Code.style";
-import { CodeBlock } from "types/notion";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
 SyntaxHighlighter.registerLanguage("javascript", javascript);
 SyntaxHighlighter.registerLanguage("typescript", typescript);
 SyntaxHighlighter.registerLanguage("json", json);
 SyntaxHighlighter.registerLanguage("c", c);
+SyntaxHighlighter.registerLanguage("markup", markup);
+SyntaxHighlighter.registerLanguage("html", markup);
+SyntaxHighlighter.registerLanguage("xml", markup);
+SyntaxHighlighter.registerLanguage("css", css);
+SyntaxHighlighter.registerLanguage("bash", bash);
+SyntaxHighlighter.registerLanguage("shell", bash);
+SyntaxHighlighter.registerLanguage("diff", diff);
 
-export default function Code(props: CodeBlock) {
-  const {
-    block: {
-      properties: { title, language, caption: blockCaption },
-    },
-  } = props;
+interface Props {
+  code: string;
+  language?: string;
+  caption?: string;
+}
 
-  const code = title.map((it) => it.join("")).join("");
-  const caption =
-    blockCaption && blockCaption.map((it) => it.join("")).join("");
-  const lang = language.at(0)?.at(0);
-
+export default function Code({ code, language, caption }: Props) {
   const onClickCopyCode = () => {
     window.navigator.clipboard
       .writeText(code)
@@ -59,7 +62,7 @@ export default function Code(props: CodeBlock) {
       <SyntaxHighlighter
         style={oneDark}
         showLineNumbers={true}
-        language={lang?.toLowerCase()}
+        language={language?.toLowerCase()}
         customStyle={{
           marginTop: "0px",
           borderTopLeftRadius: "0px",

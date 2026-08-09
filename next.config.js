@@ -8,8 +8,6 @@ const nextConfig = {
   swcMinify: true,
   env: {
     BASE_URL: process.env.BASE_URL,
-    NOTION_API_KEY: process.env.NOTION_API_KEY,
-    NOTION_DATABASE_ID: process.env.NOTION_DATABASE_ID,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
   },
   webpack: (config) => {
